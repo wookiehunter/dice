@@ -1,0 +1,125 @@
+/* Add Font Imports Here */
+
+/* Body Styling */
+.dice-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.dice {  
+    padding: 8px;  
+    background-color: rgba(0, 0, 0, 0.8);  
+    width: 300px;  
+    height: 300px;  
+    border-radius: 10%;
+    margin: 20px;
+}
+
+.dot {
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color:white;
+}
+
+.first-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 5s ease;
+    transition: all 5s ease;
+}
+
+.second-face {
+    display: flex;
+    justify-content: space-between;
+    animation: spin 5s ease;
+    transition: all 5s ease;
+}
+
+.second-face .dot:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+.third-face {
+    display: flex;
+    justify-content: space-between;
+    animation: spin 5s ease;
+    transition: all 5s ease;
+}
+
+.third-face .dot:nth-of-type(2) {
+    align-self: center;
+}
+
+.third-face .dot:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+.fourth-face {
+    display: flex;
+    justify-content: space-between;
+    animation: spin 5s ease;
+    transition: all 5s ease;
+}
+
+.fourth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth-face {
+    display: flex;
+    justify-content: space-between;
+    animation: spin 5s ease;
+    transition: all 5s ease;
+}
+
+.fifth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+    justify-content: center;
+}
+
+.sixth-face {
+    display: flex;
+    justify-content: space-between;
+    animation: spin 5s ease;
+    transition: all 5s ease;
+}
+
+.sixth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+}
+
+/* Animations */
+@keyframes spin {
+    to {
+        transform: rotate(3600deg);
+    }
+
+    from {
+        transform: rotate(0deg);
+        opacity: 0;
+        background-color: red;
+    }
+}
+
+/* Media Queries */
