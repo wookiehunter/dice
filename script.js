@@ -21,7 +21,7 @@ let dice3 = rollDice(1, 7)
 let dice4 = rollDice(1, 7)
     console.log(dice1, dice2, dice3, dice4)
 
-
+// Create the dice and add to DOM
 function Dice1() {
     const die1 = document.createElement('div')
     die1.classList.add('dice', 'first-face')
@@ -145,7 +145,7 @@ function Dice6() {
     container.appendChild(die6)
 }
 
-// create dice and add to DOM
+// check dice value and trigger appropriate function to create image
 function createDice1() {
     if(dice1 === 1) {
         Dice1()
@@ -161,7 +161,7 @@ function createDice1() {
         Dice6()
     }
 }
-// create dice and add to DOM
+
 function createDice2() {
     if(dice2 === 1) {
         Dice1()
@@ -177,7 +177,7 @@ function createDice2() {
         Dice6()
     }
 }
-// create dice and add to DOM
+
 function createDice3() {
     if(dice3 === 1) {
         Dice1()
@@ -193,7 +193,7 @@ function createDice3() {
         Dice6()
     }
 }
-// create dice and add to DOM
+
 function createDice4() {
     if(dice4 === 1) {
         Dice1()

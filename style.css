@@ -1,14 +1,17 @@
 /* Add Font Imports Here */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Space+Mono:ital@1&display=swap');
 
 /* Body Styling */
 body {
     background-color: #002e62da;
+    font-family: 'Space Mono', monospace;
 }
 
 h1 {
     text-align: center;
     color: #fff;
     font-size: 3rem;
+    font-family: 'Nunito', sans-serif;
 }
 
 .btn-container {
@@ -16,7 +19,6 @@ h1 {
     justify-content: center;
     align-items: center;
     min-width: 80vw;
-    min-height: 110px;
     margin-top: 30px;
 }
 
@@ -28,13 +30,20 @@ h1 {
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0 25px;
-    box-shadow: 5px 5px 10px rgba(  255, 255, 255, 0.4);
+    font-family: inherit;
+    box-shadow: 3px 9px 5px rgba(  255, 255, 255, 0.4);
 }
 
 .btn:hover, .reload-btn:hover {
     color: goldenrod;
+}
+
+.btn:focus, .reload-btn:focus {
+    outline: none;
+    transform: translateY(5px);
+    box-shadow: none;
 }
 
 .reload-container {
@@ -53,6 +62,7 @@ h1 {
     color: #fff;
     background-color: #002e62;
     text-align: center;
+    font-family: inherit;
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(  255, 255, 255, 0.4);
 }
